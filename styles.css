@@ -166,3 +166,84 @@
           text-align: center;
       }
       
+/* Add media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #searchInput {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .search-section button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .country-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .country-card {
+        padding: 10px;
+    }
+
+    .info-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .currency-converter {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+
+    .weather-forecast {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .weather-day {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #searchInput {
+        font-size: 0.8rem;
+    }
+
+    .search-section button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .country-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .weather-forecast {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
